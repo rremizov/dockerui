@@ -15,7 +15,7 @@ run:
 		--publish $(HOST):$(PORT):9000 \
 		--name=dockerui \
 		--volume /var/run/docker.sock:/docker.sock \
-		dockerui -e /docker.sock
+		rremizov/dockerui32 -e /docker.sock
 
 open:
 	$(OPEN) localhost:$(PORT)
